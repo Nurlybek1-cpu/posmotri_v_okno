@@ -15,7 +15,7 @@ html {
   min-height: 100vh;
   inline-size: 1200px;
   block-size: 100%;
-  margin: 133px auto;
+  margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -133,6 +133,7 @@ ol {
   background-color: transparent;
   color: #ffffffb2;
   font-size: 18px;
+  font-family: inherit;
   word-spacing: 3px;
   letter-spacing: -1px;
 }
@@ -177,7 +178,7 @@ ol {
   margin: 0 5px 0 1.5px;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,6 +284,10 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-bottom: 6px;
   font-family: Oswald, sans-serif;
   font-size: 30px;
@@ -314,10 +319,11 @@ ol {
   appearance: none;
   cursor: url(../images/pointer.png), pointer;
   background-color: transparent;
-  border: 1px solid #fff;
   color: currentColor;
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  border: 1px solid currentColor;
 }
 
 .search-form__submit-button:active {
@@ -336,7 +342,7 @@ ol {
   transform: translate(-50%, -50%);
   width: 104%;
   height: 125%;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   border-radius: 0;
   pointer-events: none;
 }
